@@ -1,0 +1,118 @@
+@import "./partials/normalize";
+@import "./partials/remodal";
+@import "./partials/remodal-default-theme";
+@import "mixin";
+@import "fonts";
+@import "buttons";
+@import "form";
+@import "remodal";
+@import "icon";
+
+
+* {
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+}
+body {
+  background-color: #131313;
+  font-family: $font1;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #171717;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #C2AB81;
+    border-radius: 20px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #f1f1f1;
+  }
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+
+.wrp {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 40px;
+  padding-left: 40px;
+  @include r(767){
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666666;
+}
+
+a {
+  transition: .3s ease;
+  text-decoration: none;
+  &:hover {
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-desktop-none {
+  display: none;
+  @include r(767) {
+    display: block;
+  }
+}
+
+.d-mobile-none {
+  display: block;
+  @include r(767) {
+    display: none !important;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+
+}
+
+
+@import "componets/header";
+@import "componets/nav";
+@import "componets/hero";
+@import "componets/cards";
+@import "componets/product-item";
+
+
+

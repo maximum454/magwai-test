@@ -1,0 +1,283 @@
+.form-group{
+    margin-bottom: 20px;
+}
+.form-column{
+    width: 740px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    .form-check{
+        margin-bottom: 27px;
+    }       
+}
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+.form-dif {
+    margin: 0 5px;
+    align-self: center;
+}
+.form-group .form-label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+}
+.form-group .form-title {
+    display: block;
+    margin-bottom: 6px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #333333;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding-bottom: 6px;
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #00b39b, #0769ad);
+    &:focus{
+        outline: none;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 20px;
+            padding: 2px;
+            background:linear-gradient(45deg,#00b39b, #0769ad);
+            -webkit-mask:
+                    linear-gradient(#151A20 0 0) content-box,
+                    linear-gradient(#151A20 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+    }
+    &::placeholder{
+        color: #ffffff;
+    }
+
+}
+.form-argee{
+    color: #ffffff;
+    font-size: 14px;
+    a{
+        font-size: initial;
+    }
+}
+
+.form-group-simbol {
+    position: relative;
+    max-width: 80px;
+    .form-control {
+        padding-right: 22px;
+    }
+
+    .simbol {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 5px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        /* or 123% */
+
+        text-align: center;
+
+        color: #333333;
+    }
+}
+.form-control-plaintext {
+    display: block;
+    width: 100%;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    margin-bottom: 0;
+    line-height: 1.5;
+    background-color: transparent;
+    border: solid transparent;
+    border-width: 1px 0;
+    border-bottom: 1px solid rgba(68, 121, 163, 0.12);
+    &:placeholder {
+        color: #a4a9bb;
+    }
+}
+.form-text {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #a4a9bb;
+    margin-top: 10px;
+}
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 1.25rem;
+}
+.form-check-inline {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 0;
+    margin-right: 26px;
+}
+.form-check-inline .form-check-input {
+    position: static;
+    margin-top: 0;
+    margin-right: 0.3125rem;
+    margin-left: 0;
+}
+.form-check-label {
+    margin-bottom: 0;
+    a {
+        text-decoration: none;
+    }
+}
+.form-check-input:disabled ~ .form-check-label {
+    color: #6c757d;
+}
+.form-check-input {
+    position: absolute;
+    margin-top: 0.3rem;
+    margin-left: -1.25rem;
+}
+.form-captcha {
+    display: flex;
+    align-items: center;
+    .form-control {
+        max-width: 150px;
+        margin-right: 12px;
+    }
+}
+
+
+.form_radio {
+    margin-bottom: 10px;
+}
+
+.form_radio input[type=radio] {
+    display: none;
+}
+.form_radio label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 0;
+    line-height: 18px;
+    user-select: none;
+}
+.form_radio label:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background: url(../img/radiobutton-inactive.png) 0 0 no-repeat;
+}
+
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+    background: url(../img/radiobutton-active.png) 0 0 no-repeat;
+}
+
+/* Hover */
+.form_radio label:hover:before {
+    filter: brightness(120%);
+}
+
+/* Disabled */
+.form_radio input[type=radio]:disabled + label:before {
+    filter: grayscale(100%);
+}
+
+.checkbox-other {
+    display: block;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+.checkbox-other input[type=checkbox] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+.checkbox-other span {
+    display: inline-block;
+    position: relative;
+    padding: 0 0 0 25px;
+    line-height: 18px;
+}
+.checkbox-other span:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    transition: background-color 0.3s ease;
+    background-color: #EEEEEE;
+    border-radius: 2px;
+}
+
+/* Checked */
+.checkbox-other input[type=checkbox]:checked + span:before {
+    background-color: #FD7400;
+    background-image: url(../img/chekbox-active.svg);
+    background-size: 11px 9px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Focus */
+.focused span:before {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Hover */
+.checkbox-other span:hover:before {
+    background-image: url(../img/chekbox-active.svg);
+    background-size: 11px 9px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FD7400;
+}
+
+/* Active */
+.checkbox-other span:active:before {
+    filter: brightness(80%);
+}
+
+/* Disabled */
+.checkbox-other input[type=checkbox]:disabled + span {
+    color: #666;
+    cursor: default;
+}
+.checkbox-other input[type=checkbox]:disabled + span:before {
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+

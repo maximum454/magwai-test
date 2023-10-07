@@ -1,0 +1,17 @@
+.icon {
+    display: inline-block;
+    position: relative;
+    margin-right: 16px;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.icon-menu {
+    background-image: url("../img/icons-sprite.svg#menu");
+}
+.icon-phone {
+    background-image: url("../img/icons-sprite.svg#phone");
+}

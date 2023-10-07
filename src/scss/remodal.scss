@@ -1,0 +1,59 @@
+.remodal {
+    text-align: left;
+    background-color: transparent;
+    padding: 120px 20px 20px;
+    &__title{
+        font-weight: 700;
+        font-size: 24px;
+        color: #ffffff;
+        margin: 0 0 40px;
+    }
+    .remodal-close {
+        right: 20px;
+        top: 22px;
+        left: auto;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        transition: .3s ease;
+        &:before {
+            content: '';
+            left: auto;
+            right: 0;
+            top: 50%;
+            margin-top: -12px;
+            background-image: url("../img/close.svg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+        }
+        &:hover{
+            transform: rotate(180deg);
+            transition: .3s ease;
+        }
+    }
+    .btn{
+        width: 100%;
+        margin-top: 40px;
+    }
+    @include rmin(641){
+        max-width: 420px;
+    }
+    @include r(767){
+        padding: 20px;
+        .btn{
+            width: 100%;
+            font-size: 14px;
+            line-height: 17px;
+            margin-top: 20px;
+        }
+    }
+}
+.remodal-wrapper {
+    padding: 20px;
+}
+.remodal-overlay{
+    background-color: #151A20;
+}

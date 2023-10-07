@@ -1,0 +1,73 @@
+.table {
+    width: 100%;
+    margin-bottom: 40px;
+    color: #212529;
+    vertical-align: top;
+    border-color: #dee2e6;
+    background-color: transparent;
+    caption-side: bottom;
+    border-collapse: collapse;
+    white-space: nowrap;
+    a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        text-decoration-line: underline;
+        color: #324c9a;
+    }
+    &.history{
+        a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 24px;
+            text-decoration-line: underline;
+            color: #324c9a;
+        }
+        p{
+            margin: 0;
+        }
+        .btn{
+            text-decoration: none;
+        }
+    }
+}
+.table > thead {
+    vertical-align: bottom;
+}
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+.table > tbody {
+    vertical-align: inherit;
+}
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+.table > :not(:last-child) > :last-child > * {
+    border-bottom-color: transparent;
+}
+th {
+    text-align: inherit;
+    text-align: -webkit-match-parent;
+}
+.table > :not(caption) > * > * {
+    padding: 19px 0.5rem 28px;
+    border-bottom-width: 1px;
+    font-weight: normal;
+}
