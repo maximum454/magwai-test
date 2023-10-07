@@ -46,9 +46,13 @@
     }
   }
   @include r(767){
+    margin-bottom: 43px;
     &__title{
       font-size: 20px;
       margin: 0 0 30px;
+    }
+    &__footer {
+      margin-top: 38px;
     }
     .product-item {
       flex: 1 0 100%;
