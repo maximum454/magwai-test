@@ -33,8 +33,9 @@
     }
   }
   @include r(1023){
+    margin-bottom: 154px;
     &__title{
-      margin: 0 0 40px;
+      margin: 0 9px 40px;
     }
     &__body {
       gap: 20px;

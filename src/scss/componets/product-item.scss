@@ -38,4 +38,12 @@
   .btn{
     width: 100%;
   }
+  @include r(1023){
+    &__text{
+      margin-bottom: 42px;
+    }
+    &__date{
+      margin-bottom: 25px;
+    }
+  }
 }

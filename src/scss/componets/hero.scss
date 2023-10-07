@@ -39,11 +39,17 @@
 
   }
   @include r(1023){
-    margin-bottom: 44px;
+    margin-bottom: 46px;
+    height: 90px;
     &__title{
-      font-size: 30px;
+      font-size: 38px;
+      line-height: 46px;
+    }
+    &__body{
+      padding: 0 9px;
     }
     &__content{
+      max-width: 80%;
       margin-bottom: 76px;
     }
   }

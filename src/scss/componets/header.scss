@@ -5,7 +5,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: 30px;
+		gap: 20px;
 	}
 	&__logo{
 		flex-shrink: 0;
@@ -42,14 +42,46 @@
 			width: 32px;
 			height: 32px;
 			cursor: pointer;
+			flex-shrink: 0;
 		}
 		&__nav{
 			display: none;
 		}
 	}
 	@include r(1023){
+		padding: 30px 0;
+		&__body{
+			padding: 0 10px;
+		}
 		&__menu{
-			margin-right: 90px;
+			margin-right: 75px;
+		}
+		.btn-secondary{
+			margin-right: 20px;
+			margin-left: 0;
+			padding: 18px 23px;
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0;
+				right: -11px;
+				display: block;
+				background-color: #fff;
+				width: 6px;
+				height: 100%;
+			}
+			&:hover {
+				color: #fff;
+				background-color: #5a6268;
+				border-color: #545b62;
+				&:after{
+					background-color: #C2AB81;
+				}
+			}
+			span{
+				transform: skew(20deg);
+				display: inline-block;
+			}
 		}
 	}
 	@include r(767){
