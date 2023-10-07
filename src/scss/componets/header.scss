@@ -1,10 +1,67 @@
 .header{
 	position: relative;
-	padding: 24px 0;
+	padding: 26px 0;
 	&__body{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		gap: 30px;
+	}
+	&__logo{
+		flex-shrink: 0;
+		margin-right: 45px;
+	}
+	&__menu{
+		display: none;
+	}
+	&__control{
+		display: flex;
+		.icon{
+			margin: 0;
+		}
+		.btn-outline-secondary{
+			padding: 8px 20px;
+			margin-right: 12px;
+			opacity: .6;
+		}
+	}
+	&__nav{
+		margin-left: 0;
+		margin-right: auto;
+	}
+	@include r(1520){
+		&__logo{
+			flex-shrink: 0;
+			margin-right: auto;
+		}
+		&__menu{
+			display: block;
+			background-color: transparent;
+			border: none;
+			background-image: url("../img/icons-sprite.svg#menu");
+			width: 32px;
+			height: 32px;
+			cursor: pointer;
+		}
+		&__nav{
+			display: none;
+		}
+	}
+	@include r(1023){
+		&__menu{
+			margin-right: 90px;
+		}
+	}
+	@include r(767){
+		padding: 12px 0;
+		&__logo{
+			flex-shrink: 0;
+			margin-right: 0;
+			margin-left: auto;
+			max-width: 112px;
+		}
+		&__control{
+			display: none;
+		}
 	}
 }

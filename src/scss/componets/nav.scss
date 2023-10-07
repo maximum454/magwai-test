@@ -1,15 +1,51 @@
-.nav{
-  &__list{
+.nav {
+  &__list {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     gap: 42px;
-    a{
+
+    a {
       color: #ffffff;
       font-size: 14px;
       font-weight: bold;
       text-transform: uppercase;
+      &:hover{
+        color: #C2AB81;
+      }
+    }
+  }
+
+  @include r(1430) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #131313;
+    width: 100%;
+    z-index: 10;
+    padding: 50px;
+    &__list {
+      display: block;
+      li{
+        margin-bottom: 15px;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+        a{
+          color: #131313;
+          font-size: 38px;
+          line-height: 1.5;
+          text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+          1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;;
+          &:hover{
+            color: #131313;
+            text-shadow: 1px 0 #C2AB81, -1px 0 #C2AB81, 0 1px #C2AB81, 0 -1px #C2AB81,
+            1px 1px #C2AB81, -1px -1px #C2AB81, 1px -1px #C2AB81, -1px 1px #C2AB81;
+          }
+        }
+      }
     }
   }
 }
