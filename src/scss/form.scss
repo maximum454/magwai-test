@@ -46,9 +46,7 @@
     border: none;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     padding-bottom: 6px;
-    border-bottom: 2px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to right, #00b39b, #0769ad);
+    border-bottom: 2px solid #C2AB81;
     &:focus{
         outline: none;
         position: relative;
