@@ -46,6 +46,9 @@
 		}
 		&__nav{
 			display: none;
+			&.active{
+				display: block;
+			}
 		}
 	}
 	@include r(1023){

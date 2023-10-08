@@ -1721,6 +1721,10 @@ a {
   margin-right: auto;
 }
 
+.nav__body {
+  overflow: hidden;
+}
+
 .nav__list {
   margin: 0;
   padding: 0;
@@ -1740,6 +1744,10 @@ a {
 
 .nav__list a:hover {
   color: #C2AB81;
+}
+
+.nav__control {
+  display: none;
 }
 
 .hero {
@@ -1908,6 +1916,10 @@ a {
     display: none;
   }
 
+  .header__nav.active {
+    display: block;
+  }
+
   .nav {
     position: absolute;
     top: 100%;
@@ -1915,6 +1927,7 @@ a {
     right: 0;
     background-color: #131313;
     width: 100%;
+    height: 100vh;
     z-index: 10;
     padding: 50px;
   }
@@ -1935,7 +1948,7 @@ a {
     color: #131313;
     font-size: 38px;
     line-height: 1.5;
-    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    text-shadow: 1px 0 #808080, -1px 0 #808080, 0 1px #808080, 0 -1px #808080, 1px 1px #808080, -1px -1px #808080, 1px -1px #808080, -1px 1px #808080;
   }
 
   .nav__list li a:hover {
@@ -2089,6 +2102,32 @@ a {
   }
 
   .header__control {
+    display: none;
+  }
+
+  .nav {
+    padding: 18px;
+    height: calc(100vh - 70px);
+    overflow: auto;
+  }
+
+  .nav__list li a {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .nav__control {
+    display: block;
+    margin-top: 51px;
+  }
+
+  .nav__control .btn {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 0 auto 6px;
+  }
+
+  .nav__control .btn.btn-secondary:after {
     display: none;
   }
 

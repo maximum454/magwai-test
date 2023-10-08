@@ -1,4 +1,7 @@
 .nav {
+  &__body{
+    overflow: hidden;
+  }
   &__list {
     margin: 0;
     padding: 0;
@@ -16,7 +19,9 @@
       }
     }
   }
-
+  &__control{
+    display: none;
+  }
   @include r(1540) {
     position: absolute;
     top: 100%;
@@ -24,6 +29,7 @@
     right: 0;
     background-color: #131313;
     width: 100%;
+    height: 100vh;
     z-index: 10;
     padding: 50px;
     &__list {
@@ -37,12 +43,40 @@
           color: #131313;
           font-size: 38px;
           line-height: 1.5;
-          text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
-          1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;;
+          text-shadow: 1px 0 #808080, -1px 0 #808080, 0 1px #808080, 0 -1px #808080,
+          1px 1px #808080, -1px -1px #808080, 1px -1px #808080, -1px 1px #808080;
           &:hover{
             color: #131313;
             text-shadow: 1px 0 #C2AB81, -1px 0 #C2AB81, 0 1px #C2AB81, 0 -1px #C2AB81,
             1px 1px #C2AB81, -1px -1px #C2AB81, 1px -1px #C2AB81, -1px 1px #C2AB81;
+          }
+        }
+      }
+    }
+  }
+  @include r(767){
+    padding: 18px;
+    height: calc(100vh - 70px);
+    overflow: auto;
+    &__list {
+
+      li{
+        a{
+          font-size: 20px;
+          line-height: 1.5;
+        }
+      }
+    }
+    &__control{
+      display: block;
+      margin-top: 51px;
+      .btn{
+        display: block;
+        width: calc(100% - 20px);
+        margin: 0 auto 6px;
+        &.btn-secondary{
+          &:after{
+            display: none;
           }
         }
       }

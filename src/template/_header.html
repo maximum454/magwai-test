@@ -1,27 +1,39 @@
 <header class="header">
     <div class="container">
         <div class="header__body">
-            <button class="header__menu"></button>
+            <button class="header__menu js-menu"></button>
             <a href="#" class="header__logo">
                 <img class="img-fluid" src="./img/magwai.svg" height="60" width="157" alt="Magwai">
             </a>
             <nav class="header__nav nav">
-                <ul class="nav__list">
-                    <li><a href="#">УСЛУГИ</a></li>
-                    <li><a href="#" class="active">АБОНЕМЕНТЫ</a></li>
-                    <li><a href="#"><nobr>ПОЧЕМУ МЫ</nobr></a></li>
-                    <li><a href="#">ОБОРУДОВАНИЕ</a></li>
-                    <li><a href="#">АКЦИИ</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">КОНТАКТЫ</a></li>
-                </ul>
+                <div class="nav__body">
+                    <ul class="nav__list">
+                        <li><a href="#">УСЛУГИ</a></li>
+                        <li><a href="#" class="active">АБОНЕМЕНТЫ</a></li>
+                        <li><a href="#">
+                            <nobr>ПОЧЕМУ МЫ</nobr>
+                        </a></li>
+                        <li><a href="#">ОБОРУДОВАНИЕ</a></li>
+                        <li><a href="#">АКЦИИ</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                    <div class="nav__control">
+                        <a href="tel:00000000" class="btn btn-outline-secondary">
+                            <span><i class="icon icon-phone"></i></span>
+                        </a>
+                        <button type="button" class="btn btn-secondary" data-remodal-target="modal"><span>ОСТАВИТЬ ЗАЯВКУ</span>
+                        </button>
+                    </div>
+                </div>
             </nav>
 
             <div class="header__control">
                 <a href="tel:00000000" class="btn btn-outline-secondary">
                     <span><i class="icon icon-phone"></i></span>
                 </a>
-                <button type="button" class="btn btn-secondary" data-remodal-target="modal"><span>ОСТАВИТЬ ЗАЯВКУ</span></button>
+                <button type="button" class="btn btn-secondary" data-remodal-target="modal"><span>ОСТАВИТЬ ЗАЯВКУ</span>
+                </button>
             </div>
         </div>
     </div>
