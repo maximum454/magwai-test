@@ -1007,16 +1007,16 @@ html.remodal-is-locked {
 }
 
 .btn.btn-outline-primary {
-  color: #007bff;
+  color: #ffffff;
   background-color: transparent;
   background-image: none;
-  border-color: #007bff;
+  border-color: #ffffff;
 }
 
 .btn.btn-outline-primary:hover {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #C2AB81;
+  border-color: #C2AB81;
 }
 
 .btn.btn-outline-secondary {
@@ -1499,8 +1499,8 @@ html.remodal-is-locked {
 
 .remodal {
   text-align: left;
-  background-color: transparent;
-  padding: 120px 20px 20px;
+  background-color: #131313;
+  padding: 40px 20px 20px;
 }
 
 .remodal__title {
@@ -1572,6 +1572,42 @@ html.remodal-is-locked {
 
 .icon-phone {
   background-image: url("../img/icons-sprite.svg#phone");
+}
+
+.text-warning {
+  color: #F2994A;
+}
+
+.text-danger {
+  color: #eb5757;
+}
+
+.text-link {
+  color: #324c9a;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-success {
+  color: #6fcf97;
+}
+
+.text-muted {
+  color: #a4a9bb;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 * {
@@ -1670,6 +1706,13 @@ a {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.error {
+  color: #eb5757;
+  font-size: 14px;
+  margin-top: 5px;
+  display: inline-block;
 }
 
 .header {

@@ -7,6 +7,7 @@
 @import "form";
 @import "remodal";
 @import "icon";
+@import "text";
 
 
 * {
@@ -105,6 +106,13 @@ a {
 
 .main {
 
+}
+
+.error{
+  color: #eb5757;
+  font-size: 14px;
+  margin-top: 5px;
+  display: inline-block;
 }
 
 

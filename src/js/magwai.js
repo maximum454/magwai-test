@@ -3,12 +3,35 @@
 
 
 $(function (){
-    $('.js-phone-mask').mask('+7 (000) 000-00-00');
+    $('.js-phone-mask').inputmask("+7(999)999-9999");
 
     $('.js-menu').on('click', function (){
         $(this).toggleClass('active');
         $('body').toggleClass('lock');
         $('.header__nav').toggleClass('active');
     })
+
+
+
+
+    jQuery.validator.addMethod("checkMaskPhone", function(value, element) {
+        return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
+    });
+
+
+    let form = $('.js-send-form');
+    form.validate();
+    $.validator.addClassRules({
+        'js-phone-mask': {
+            checkMaskPhone: true,
+        }
+    });
+    form.submit(function(e){
+        e.preventDefault();
+        if (form.valid()) {
+            alert('Форма отправлена');
+        }
+        return;
+    });
 })
 
