@@ -1419,6 +1419,8 @@ $(function (){
         e.preventDefault();
         if (form.valid()) {
             alert('Форма отправлена');
+            let inst = $('[data-remodal-id=modal]').remodal();
+            inst.close();
         }
         return;
     });
