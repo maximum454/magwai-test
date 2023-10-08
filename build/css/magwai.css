@@ -1926,10 +1926,18 @@ a {
   line-height: 26px;
   font-weight: normal;
   margin-bottom: 20px;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .product-item__text {
   margin-bottom: 20px;
+  -webkit-line-clamp: 6;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .product-item__date {
